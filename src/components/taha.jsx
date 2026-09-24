@@ -1,6 +1,7 @@
 import React from 'react'
+import TahaCardComponent from './TahaCardComponent'
 
-export default function rameez() {
+export default function Taha() {
 
     let products = [
         {
@@ -251,18 +252,10 @@ export default function rameez() {
 
 
             {products.map((x)=>{
-                return<div className="card">
-                <img
-                    src={x.image}
-                    alt="Product"
-                />
+                let {title ,description,image,price}=x
+                return <TahaCardComponent title={title}desc={description} img={image} price={price}  />
+            
 
-                <h2>{x.title}</h2>
-
-                <p>{x.description}</p>
-
-                <h3>${x.price}</h3>
-            </div>
             })}
    
 

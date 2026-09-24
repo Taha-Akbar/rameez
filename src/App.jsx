@@ -1,11 +1,11 @@
-import Rameez from './components/Rameez'
 
+import Taha from './components/Taha'
 function App() {
 
 
 return(
   <>
-  <Rameez/>
+ <Taha/>
   </>
   
 
