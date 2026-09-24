@@ -1,5 +1,6 @@
 import React from 'react'
- function Rameez() {
+import TahaCardComponent from './TahaCardComponent'
+function Rameez() {
 
   let products = [
     {
@@ -247,41 +248,12 @@ import React from 'react'
   return (
 
     <div
-      style={{
-        display: "flex",
-        gap: "20px",
-        justifyContent: "center",
-        marginTop: "50px"
-      }}
-    >
-    {products.map((x)=>{
-let {title,price,image,description}=x
-      return<div
-        style={{
-          width: "250px",
-          padding: "20px",
-          backgroundColor: "white",
-          borderRadius: "15px",
-          textAlign: "center",
-          boxShadow: "0 5px 15px rgba(0,0,0,0.15)"
-        }}
-      >
-        <img src={image} alt="" />
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <button
-          style={{
-            padding: "10px 20px",
-            border: "none",
-            borderRadius: "8px",
-            backgroundColor: "#222",
-            color: "white"
-          }}
-        >
-          Read More
-        </button>
-      </div>
-    })}
+      style={{display: "flex",gap: "20px",justifyContent: "center",marginTop: "50px"}}>
+      {products.map((x) => {
+        let { title, price, image, description } = x
+        return <TahaCardComponent title={title} price={price} img={image} dscp={description} />
+        
+      })}
 
 
     </div>
