@@ -1,16 +1,17 @@
 
 import Taha from './components/Taha'
+
 function App() {
 
 
-return(
-  <>
- <Taha/>
-  </>
-  
+  return (
+    <>
+      <Taha />
+    </>
 
-  
-)
+
+
+  )
 }
 
 export default App
