@@ -251,13 +251,13 @@ export default function Taha() {
         <div className="card-container">
 
 
-            {products.map((x)=>{
-                let {title ,description,image,price}=x
-                return <TahaCardComponent title={title}desc={description} img={image} price={price}  />
-            
+            {products.map((x) => {
+                let { title, description, image, price } = x
+                return <TahaCardComponent title={title} desc={description} img={image} price={price} />
+
 
             })}
-   
+
 
         </div>
 
